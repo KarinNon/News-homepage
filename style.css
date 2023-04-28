@@ -1,0 +1,405 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+
+:root {
+    --bg-color: hsl(36, 100%, 99%);
+    --text-color: hsl(236, 13%, 42%);
+    --number-color: hsl(233, 8%, 79%);
+    --heading-color: hsl(240, 100%, 5%);
+    --text-hover: hsl(35, 77%, 62%);
+    --button-color: hsl(5, 85%, 63%);
+    --font: "Inter", sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    display: flex;
+    align-items: middle;
+    height: 1024px;
+    font-family: var(--font);
+}
+
+.main {
+    width: 1100px;
+    height: 775px;
+    margin: auto;
+    position: relative;
+}
+
+.main .header {
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    left: 0;
+}
+
+.main .header button {
+    display: none;
+}
+
+.main ul {
+    position: absolute;
+    right: 0;
+    list-style-type: none;
+    display: flex;
+}
+
+.main ul li {
+    margin-inline: 15px;
+    transform: translateY(-250%);
+    font-size: 1.1rem;
+    color: var(--text-color);
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.main ul li:hover {
+    color: var(--text-hover);
+}
+
+.main ul li:last-child {
+    margin-right: 0;
+}
+
+.main .main-news {
+    width: 100%;
+    height: 500px;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+}
+
+.main .main-news .top-news {
+    width: 825px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.main .main-news .top-news .top-news-img {
+    width: 100%;
+    height: 300px;
+    background-image: url("image-web-3-desktop.jpg");
+    background-size: cover;
+}
+
+.main .main-news .top-news .top-news-text {
+    display: flex;
+    flex-direction: row;
+}
+
+.main .main-news .top-news .top-news-text .top-news-text-header {
+    width: 50%;
+    height: 225px;
+}
+
+.main .main-news .top-news .top-news-text .top-news-text-header h1 {
+    font-size: 3.5rem;
+    margin: 0;
+    font-weight: 800;
+    line-height: 60px;
+    margin-top: 20px;
+}
+
+.main .main-news .top-news .top-news-text .top-news-text-desc {
+    width: 50%;
+    height: 225px;
+    position: relative;
+}
+
+.main .main-news .top-news .top-news-text .top-news-text-desc p {
+    font-size: 1rem;
+    line-height: 25px;
+    color: var(--text-color);
+    margin-top: 25px;
+}
+
+.main .main-news .top-news .top-news-text .top-news-text-desc button {
+    font-family: var(--font);
+    border: none;
+    padding: 15px 35px;
+    background-color: var(--button-color);
+    color: var(--bg-color);
+    font-size: 0.9rem;
+    font-weight: 700;
+    position: absolute;
+    bottom: 20px;
+    transition: all 0.25s ease;
+    cursor: pointer;
+}
+
+.main .main-news .top-news .top-news-text .top-news-text-desc button:hover {
+    background-color: var(--heading-color);
+}
+
+.main .main-news .side-news {
+    width: 400px;
+    height: 450px;
+    background-color: var(--heading-color);
+    margin-left: 30px;
+    padding: 20px;
+}
+
+.main .main-news .side-news h1 {
+    color: var(--text-hover);
+    font-size: 2.5rem;
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+.main .main-news .side-news h4 {
+    color: var(--bg-color);
+    font-size: 1.3rem;
+    margin: 0;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.main .main-news .side-news h4:hover {
+    color: var(--text-hover);
+}
+
+.main .main-news .side-news p {
+    color: var(--text-color);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.main .main-news .side-news .seperator {
+    background-color: var(--text-color);
+    width: 100%;
+    height: 0.5px;
+    margin-block: 30px;
+}
+
+.main .mobile-nav {
+    display: none;
+}
+
+.main .sub-news {
+    width: 100%;
+    height: 125px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+}
+
+.main .sub-news .sub-news-box {
+    width: 35%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-right: 50px;
+}
+
+.main .sub-news .sub-news-box .sub-news-box-img {
+    background-size: cover;
+    width: 30%;
+    height: 100%;
+}
+
+.img-1 {
+    background-image: url("image-retro-pcs.jpg");
+}
+
+.img-2 {
+    background-image: url("image-top-laptops.jpg");
+}
+
+.img-3 {
+    background-image: url("image-gaming-growth.jpg");
+}
+
+.main .sub-news .sub-news-box .sub-news-box-text {
+    width: 60%;
+    height: 100%;
+    padding-top: 0;
+    padding-left: 5%;
+}
+
+.main .sub-news .sub-news-box .sub-news-box-text h1 {
+    color: var(--number-color);
+    font-size: 2rem;
+    font-weight: 800;
+    margin: 0;
+}
+
+.main .sub-news .sub-news-box .sub-news-box-text h4 {
+    color: var(--heading-color);
+    font-size: 1rem;
+    font-weight: 800;
+    margin: 0;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.main .sub-news .sub-news-box .sub-news-box-text h4:hover {
+    color: var(--button-color);
+}
+
+.main .sub-news .sub-news-box .sub-news-box-text p {
+    color: var(--text-color);
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.main .sub-news .sub-news-box:last-child {
+    margin-right: 0;
+}
+
+@media screen and (max-width: 380px) {
+    body {
+        width: 340px;
+        margin-top: 0;
+        padding: 10px;
+    }
+
+    .main {
+        width: 340px;
+        height: 1900px;
+        margin: 0;
+        margin-top: 20px;
+    }
+
+    .main .header {
+        position: relative;
+        width: 340px;
+        height: 40px;
+    }
+
+    .main .header ul {
+        display: none;
+    }
+
+    .main .header button {
+        position: absolute;
+        height: 100%;
+        right: 0;
+        top: 0;
+        border: 0;
+        background-color: var(--bg-color);
+        display: block;
+    }
+
+    .main .main-news {
+        margin-top: 50px;
+    }
+
+    .main .main-news .top-news {
+        width: 340px;
+        height: 1000px;
+    }
+
+    .main .main-news .top-news .top-news-img {
+        width: 340px;
+        height: 300px;
+        background-image: url("image-web-3-mobile.jpg");
+    }
+
+    .main .main-news .top-news .top-news-text {
+        width: 340px;
+        flex-direction: column;
+    }
+
+    .main .main-news .top-news .top-news-text .top-news-text-header {
+        width: 100%;
+        height: 200px;
+    }
+
+    .main .main-news .top-news .top-news-text .top-news-text-header h1 {
+        font-size: 2.75rem;
+    }
+
+    .main .main-news .top-news .top-news-text .top-news-text-desc {
+        width: 100%;
+        height: 200px;
+    }
+
+    .main .main-news .top-news .top-news-text .top-news-text-desc p {
+        width: 100%;
+        height: 200px;
+        font-size: 1rem;
+        margin-top: 20px;
+    }
+
+    .main .main-news .top-news .top-news-text .top-news-text-desc button {
+        bottom: 0;
+    }
+
+    .main .main-news {
+        flex-direction: column;
+    }
+
+    .main .mobile-nav {
+        display: none;
+        position: absolute;
+        top: -50px;
+        right: -20px;
+        width: 70%;
+        height: 100%;
+        background-color: var(--bg-color);
+        z-index: 999;
+        padding: 20px;
+        box-shadow: 0px 0px 0px 200px rgba(0,0,0,0.5);
+    }
+
+    .main .mobile-nav .mobile-nav-main {
+        position: relative;
+        width: 100%;
+        height: 700px;
+        margin-top: 30px;
+    }
+
+    .main .mobile-nav .mobile-nav-main button {
+        position: absolute;
+        right: 0;
+        border: none;
+        background-color: white;
+        cursor: pointer;
+        width: 60px;
+        height: 60px;
+    }
+
+    .main .mobile-nav .mobile-nav-main ul {
+        position: absolute;
+        left: -50px;
+        top: 200px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main .mobile-nav .mobile-nav-main ul li {
+        font-size: 1.5rem;
+        margin-block: 15px;
+        cursor: pointer;
+        color: var(--heading-color);
+    }
+
+    .main .mobile-nav .mobile-nav-main ul li:hover {
+        color: var(--button-color);
+    }
+
+    .main .main-news .side-news {
+        margin-left: 0;
+        margin-top: 50px;
+        width: 305px;
+    }
+
+    .main .main-news .side-news h4 {
+        font-size: 1.2rem;
+    }
+
+    .main .sub-news {
+        width: 340px;
+        height: 520px;
+        flex-direction: column;
+        margin-top: 800px;
+    }
+
+    .main .sub-news .sub-news-box {
+        width: 100%;
+        height: 150px;
+        margin-bottom: 20px;
+    }
+}
